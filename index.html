@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+  
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="2.png" alt="Logo portafolio" width="50" height="50">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Sobre mí</li>
+                    <li onclick="scrollToSection('unidad1')">Unidad 1</li>
+                    <li onclick="scrollToSection('unidad2')">Unidad 2</li>
+                    <li onclick="scrollToSection('unidad3')">Unidad 3</li>
+                    <li onclick="scrollToSection('unidad4')">Unidad 4</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Registrarse</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HOME PAGE -->
+    <div class="container">
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola, Yo soy</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Marcelina Daniela Mendoza Poma</h1>
+                <p class="text-gray-500">
+                    Estudiante Ingenieria de Ssistemas y Computación
+                </p>
+               
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="perfil.jpg" alt="Foto perfil" width="100" height="100">
+            </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+                    <p class="text-gray-500">Tengo un espíritu vibrante y una pasión contagiosa 
+                        por la programación. Tu alegría no solo se refleja en tu forma de ser, 
+                        sino que también impulsa tu curiosidad y creatividad para resolver problemas
+                         con código. Eres una persona que encuentra satisfacción en cada línea de código 
+                         y que, con una sonrisa, transforma desafíos complejos en soluciones elegantes.</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <p>Optimista 100%</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Curiosa 75%</p>
+                        <div class="progress__bar progress__html">
+                            <span></span>
+                        </div>
+                        <p>Amigable 80%</p>
+                        <div class="progress__bar progress__angular">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="hireMe__button pt-4">
+                        <a href="mailTo:r01091h@mss.upla.edu.pe" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg">Registrar</a>
+                    </div>
+
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!--unidad1 -->
+        <section id="unidad1" class="unidad1 min-h-full w-full pb-8 pt-8">
+            <div class="unidad1 flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">UNIDAD I: FUNDAMENTOS DE LA ARQUITECTURA DE SOFTWARE</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                   Explica los Fundamentos de la Arquitectura de Software, utilizando los estándares internacionales, para
+la producción del software.
+                </p>
+            </div>
+            <div class="unidad1">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                       <li class="filter-item active" data-filter="all">SEMANA 1</li>
+                        <li class="filter-item " data-filter="gym">SEMANA 2</li>
+                        <li class="filter-item " data-filter="tours__Web">SEMANA 3</li>
+                        <li class="filter-item " data-filter="world__Tours">SEMANA 4</li>
+                    </ul>
+                </div>
+                    <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+        <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+    <div class="project__card tours__Web">
+        <img src="mapa.png" alt="Travel Tours">
+    </div>
+     <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="actividad1.pdf" aria-label="Descargar imagen"
+                        class="cursor-pointer border-round-lg no-underline" download>Descargar Imagen</a>
+                 
+                </div>
+                
+</div>
+
+<div id="image-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-modal-btn">&times;</span>
+        <img src="mapa.png" alt="Imagen ampliada" class="modal-image">
+    </div>
+</div>
+        </section>
+         <!--unidad2 -->
+        <section id="unidad2" class="unidad2 min-h-full w-full pb-8 pt-8">
+            <div class="unidad2 flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
+                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
+                    distinctio ullam non.
+                </p>
+            </div>
+            <div class="unidad2">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                       <li class="filter-item active" data-filter="all">SEMANA 1</li>
+                        <li class="filter-item " data-filter="gym">SEMANA 2</li>
+                        <li class="filter-item " data-filter="tours__Web">SEMANA 3</li>
+                        <li class="filter-item " data-filter="world__Tours">SEMANA 4</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card gym">
+                        <img src="./assets/proyecto-4.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card world__Tours">
+                        <img src="./assets/proyecto-5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-6.webp" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--unidad3 -->
+        <section id="unidad3" class="unidad3 min-h-full w-full pb-8 pt-8">
+            <div class="unidad3 flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
+                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
+                    distinctio ullam non.
+                </p>
+            </div>
+            <div class="unidad3">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                        <li class="filter-item active" data-filter="all">SEMANA 1</li>
+                        <li class="filter-item " data-filter="gym">SEMANA 2</li>
+                        <li class="filter-item " data-filter="tours__Web">SEMANA 3</li>
+                        <li class="filter-item " data-filter="world__Tours">SEMANA 4</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card gym">
+                        <img src="./assets/proyecto-4.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card world__Tours">
+                        <img src="./assets/proyecto-5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-6.webp" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--unidad4 -->
+        <section id="unidad4" class="unidad4 min-h-full w-full pb-8 pt-8">
+            <div class="unidad4 flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
+                    recusandae placeat aliquam veniam officiis cum quam eum architecto quidem, nobis commodi consequatur
+                    distinctio ullam non.
+                </p>
+            </div>
+            <div class="unidad4">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                        <li class="filter-item active" data-filter="all">SEMANA 1</li>
+                        <li class="filter-item " data-filter="gym">SEMANA 2</li>
+                        <li class="filter-item " data-filter="tours__Web">SEMANA 3</li>
+                        <li class="filter-item " data-filter="world__Tours">SEMANA 4</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card gym">
+                        <img src="./assets/proyecto-4.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card world__Tours">
+                        <img src="./assets/proyecto-5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-6.webp" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Travel Tours</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+
+</html>
