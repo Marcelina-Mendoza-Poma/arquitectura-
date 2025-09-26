@@ -12,12 +12,16 @@
     --font: "Poppins";
 }
 body {
-    background-color: var(--bg-color);
+    background-image: url('./assets/blue-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: var(--font);
     color: var(--font-color);
     height: 100vh;
     max-width: 100vw;
 }
+
 
 .container {
     padding: 0rem 12rem;
